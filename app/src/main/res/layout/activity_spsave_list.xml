@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.sp.SPSaveListActivity">
+
+    <Button
+        android:id="@+id/btn_addString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="存储数据类型为：字符串的List集合" />
+
+    <Button
+        android:id="@+id/btn_addJavaBean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="存储数据类型为：java对象的List集合" />
+
+    <Button
+        android:id="@+id/btn_addMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="存储数据类型为：MAP集合的List集合" />
+
+    <Button
+        android:id="@+id/btn_getString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取数据类型为：字符串的List集合" />
+
+    <Button
+        android:id="@+id/btn_getJavaBean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取数据类型为：java对象的List集合" />
+
+    <Button
+        android:id="@+id/btn_getMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取数据类型为：MAP集合的List集合" />
+</LinearLayout>

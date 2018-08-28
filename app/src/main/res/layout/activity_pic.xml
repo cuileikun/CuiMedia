@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vedio.VedioPlayActivity">
+
+    <Button
+        android:id="@+id/btn_pic_m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(6.0权限)android调用系统相机拍照(获取缩略图，全尺寸图片及添加图片到图库)" />
+
+    <Button
+        android:id="@+id/btn_get_picpath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取sd卡存储图片的路径" />
+
+    <Button
+        android:id="@+id/btn_get_pic_nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(6.0权限及7.0文件安全)android调用系统相机拍照" />
+
+    <Button
+        android:id="@+id/btn_get_pic_nm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="安卓调用系统相机拍照、从相册选择图片并裁剪保存到SD卡（适配7.0）" />
+
+    <Button
+        android:id="@+id/btn_preview_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(6.0权限及7.0文件安全)android调用系统相机拍照或者从相册选择,保存到sd卡，读取出来列表展示路径并实现预览" />
+    <Button
+        android:id="@+id/btn_sqlite_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据库存储(6.0权限及7.0文件安全)android调用系统相机拍照或者从相册选择,保存到sd卡，读取出来列表展示路径并实现预览" />
+
+</LinearLayout>

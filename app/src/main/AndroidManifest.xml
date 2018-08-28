@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mbcloud_cuilk.cuilkvedioplayer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".LeaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vedio.MediaPlaySVActivity" />
+        <activity
+            android:name=".vedio.JieCaoVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".vedio.VedioViewActivity" />
+        <activity android:name=".vedio.VedioPlayActivity" />
+        <activity android:name=".pic.PicActivity" />
+        <activity android:name=".pic.secondbutton.GetSDPicPathActivity" />
+        <activity android:name=".datasave.DataSaveActivity" />
+        <activity android:name=".datasave.file.InnerFileStringActivity" />
+        <activity android:name=".datasave.file.SDFileStringActivity" />
+        <activity android:name=".datasave.ThirdFileActivity" />
+        <activity android:name=".datasave.FourthFileActivity" />
+        <activity android:name=".pic.firstbutton.CapturingFhotoActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.mbcloud_cuilk.cuilkvedioplayer.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".pic.thirdbutton.TakePhotoNMActivity" />
+        <activity android:name=".pic.fourthbutton.SavePhotoSDActivity" />
+        <activity android:name=".pic.fourthbutton.PermissionsActivity" />
+        <activity android:name=".datasave.sp.SPSaveListActivity" />
+        <activity android:name=".pic.thirdbutton.PhotoPathActivity" />
+        <activity android:name=".pic.preview.NewPreviewActivity" />
+        <activity android:name=".datasave.sp.SPActivity" />
+        <activity android:name=".datasave.sp.SPSaveNormalDataActivity" />
+        <activity android:name=".datasave.file.FileSaveActivity" />
+        <activity android:name=".pic.fifth.SDTakeReadPhotoActivity" />
+        <activity android:name=".datasave.sqlite.SqliteActivity" />
+        <activity android:name=".pic.fifth.SQliteTakeReadPhotoActivity" />
+        <activity android:name=".db.GreenDaoActivity" />
+        <activity android:name=".datasave.litepal.LitePalActivity" />
+        <activity android:name=".datasave.litepal.FirstLitePalActivity" />
+        <activity android:name=".datasave.litepal.LitePalTestActivity" />
+        <activity android:name=".vedio.vediorecord.VedioRecordActivity" />
+        <activity android:name=".vedio.vediorecord.VideoListActivity" />
+        <activity android:name=".vedio.cameraview.CameraActivity" />
+        <activity android:name=".vedio.cameraview.CameraStartAndShowActivity" />
+        <activity android:name=".vedio.mediarecorder.MediaRecorderActivity" />
+        <activity android:name=".vedio.originandcustomvediorecoder.activity.SmallVedioActivity" />
+        <activity android:name=".vedio.originandcustomvediorecoder.activity.CustomRecordActivity" />
+        <activity android:name=".vedio.originandcustomvediorecoder.activity.PlayVideoActivity" />
+        <activity android:name=".audio.AudioTestActivity" />
+        <activity android:name=".audio.first.AudioTestFirstActivity" />
+        <activity android:name=".audio.second.AudioTestSecondActivity" />
+        <activity android:name=".audio.third.AudioTestThirdActivity" />
+        <activity android:name=".scrollpulldown.ScrollViewPullActivity" />
+        <activity android:name=".xrecycle.XRecyclerViewActivity"></activity>
+    </application>
+
+</manifest>

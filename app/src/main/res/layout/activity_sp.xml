@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.sp.SPActivity">
+
+    <Button
+        android:id="@+id/btn_save_narmal_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0--sp存储基本数据类型" />
+
+    <Button
+        android:id="@+id/btn_save_list_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3--sp存储List集合" />
+
+    <Button
+        android:id="@+id/btn_save_javabean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2--sp存储javabean对象" />
+
+    <Button
+        android:id="@+id/btn_get_javabean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3--sp获取javabean对象" />
+
+    <Button
+        android:id="@+id/btn_save_bytearray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4--sp存储byte数组" />
+    <Button
+        android:id="@+id/btn_get_bytearray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5--sp获取byte数组" />
+
+</LinearLayout>

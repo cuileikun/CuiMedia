@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.DataSaveActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SP方式存储数据" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="文件（io流方式）存储数据" />
+
+            <Button
+                android:id="@+id/btn_database"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据库入门" />
+            <Button
+                android:id="@+id/btn_greendao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GreenDao入门" />
+            <Button
+                android:id="@+id/btn_litepal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LitePal入门" />
+            <TextView
+                android:id="@+id/tv_sp_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="sp方式存储路径是：data/data/包名/shared_prefs" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#ff0000" />
+
+            <TextView
+                android:id="@+id/tv_database_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="数据库存储数据路径是：data/data/包名/databases" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#ff0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="getCacheDir():内存储用于获取/data/data/cache目录，缓存目录，当存储空间不足，系统会自动将之清除。" />
+
+            <TextView
+                android:id="@+id/tv_inner_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="内存储路径是：" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#ff0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="getFilesDir 内存储用于获取/data/data/files目录,保存重要的数据信息" />
+
+            <TextView
+                android:id="@+id/tv_inner_path2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="内存储路径是：" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#ff0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="存储在sd卡 mnt目录或者storage目录，具体路径跟手机厂商有关 mnt/sdcard/info.txt" />
+
+            <TextView
+                android:id="@+id/tv_sd_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="sd储路径是：" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#ff0000" />
+
+            <TextView
+                android:id="@+id/tv_sd_path2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="sd储路径是：" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

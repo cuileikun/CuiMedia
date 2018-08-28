@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datasave.FourthFileActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img1"
+        android:src="@mipmap/ic_launcher"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="保存图片"
+        android:onClick="saveImg"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/read"
+        android:layout_marginTop="66dp" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img2"
+        android:layout_below="@+id/img1"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/read"
+        android:text="读取图片"
+        android:onClick="rawImg"
+        android:layout_below="@+id/save"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wltp"
+        android:text="读网络图片"
+        android:onClick="GetUrlImg"
+        android:layout_below="@+id/img1"
+        android:layout_alignStart="@+id/read" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="保存络图片"
+        android:onClick="SaveUrlImg"
+        android:layout_below="@+id/wltp"
+        android:layout_alignEnd="@+id/wltp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="直接保存网络图片"
+        android:onClick="SaveHttp"
+        android:layout_alignBottom="@+id/img2"
+        android:layout_toEndOf="@+id/img2" />
+
+
+</RelativeLayout>

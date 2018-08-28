@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".db.GreenDaoActivity">
+
+    <Button
+        android:id="@+id/insertsingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入单个数据"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <Button
+        android:id="@+id/multinsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="批量插入数据"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更改某条数据"/>
+
+    <Button
+        android:id="@+id/deletesingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除某条数据"/>
+
+    <Button
+        android:id="@+id/deleteMult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="批量删除所有"/>
+
+    <Button
+        android:id="@+id/checksingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询某条数据"/>
+
+    <Button
+        android:id="@+id/checkmult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据集合"/>
+
+    <Button
+        android:id="@+id/querybuilder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="复合条件查询"/>
+
+</LinearLayout>

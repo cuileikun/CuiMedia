@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datasave.litepal.LitePalTestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="增删改查都有异步操作,在子线程里面进行,防止大数据量的时候引起界面卡顿异,要进行异步数据库操作的时候，只要去调用原API相对应的Async副本方法就可以了。" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="createDatabase"
+                android:text="1，创建数据库" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addSingleObject"
+                android:text="2，增加单个对象" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addMultiRelation"
+                android:text="3，多对一关系增加对象" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addList"
+                android:text="4，添加集合对象" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="updateSingle"
+                android:text="1，修改单个对象某个字段(把news表中id为2的记录的标题改成“今日iPhone6发布”)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateSingleSecond"
+                android:text="2，修改单个对象某个字段(news表中标题为“今日iPhone6发布”的所有新闻的标题改成“今日iPhone6 Plus发布”)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateSingleThird"
+                android:text="3，修改单个对象某个字段(把news表中标题为“今日iPhone6发布”且评论数量大于0的所有新闻的标题改成“今日iPhone6 Plus发布”)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateAll"
+                android:text="4，修改整个集合(把news表中所有新闻的标题都改成“今日iPhone6发布”)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateByCondition"
+                android:text="5，根据条件修改单个对象(把news表中id为2的记录的标题改成“今日iPhone6发布”)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateByCondit"
+                android:text="6，根据条件修改单个对象(把news表中标题为“今日iPhone6发布”且评论数量大于0的所有新闻的标题改成“今日iPhone6 Plus发布”)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateLast"
+                android:text="7，根据条件修改(把news表中所有新闻的评论数清零)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="deleteFirst"
+                android:text="1，删除数据(删除news表中id为2的记录)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="deleteSecond"
+                android:text="2，删除数据(把news表中标题为“今日iPhone6发布”且评论数等于0的所有新闻都删除掉)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteThird"
+                android:text="3，删除数据(把news表中所有的数据全部删除掉)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryFirst"
+                android:text="1，查找数据(查询news表中id为1的这条记录)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryFirstItem"
+                android:text="2，查找数据(取出表中的第一条数据)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryLastItem"
+                android:text="3，查找数据(取出表中的最后一条数据)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryItem"
+                android:text="4，查找数据(把news表中id为1、3、5、7的数据都查出来)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryAllItem"
+                android:text="5，查找数据(查询news表中的所有数据)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryLian1"
+                android:text="6，查找数据(查询news表中所有评论数大于零的新闻)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryLian2"
+                android:text="7，查找数据(查询news表中所有评论数大于零的新闻,只要title和content这两列数据)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryLian3"
+                android:text="8，查找数据(查询news表中所有评论数大于零的新闻,只要title和content这两列数据  将查询出的新闻按照发布的时间倒序排列" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryLian4"
+                android:text="9，查找数据(查询news表中所有评论数大于零的新闻,只要title和content这两列数据  将查询出的新闻按照发布的时间倒序排列,只要前10条" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryLian5"
+                android:text="10，查找数据(查询news表中所有评论数大于零的新闻,只要title和content这两列数据  将查询出的新闻按照发布的时间倒序排列,对新闻进行分页展示，翻到第二页时，展示第11到第20条新闻" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryBySql"
+                android:text="11，查找数据(根据sql语句查询)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="jhCount"
+                android:text="1，聚合函数count()" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="jhCount2"
+                android:text="2，聚合函数count()" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="jhSum"
+                android:text="3，聚合函数sum()统计news表中评论的总数量" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="jhAverage"
+                android:text="4，聚合函数average()统计news表中平均每条新闻有多少评论" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="jhMax"
+                android:text="5，聚合函数max()查询news表中所有新闻里面最高的评论数是多少" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="jhMin"
+                android:text="6，聚合函数min()查询news表中所有新闻里面最少的评论数是多少" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

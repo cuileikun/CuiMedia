@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.sp.SPSaveNormalDataActivity">
+
+    <Button
+        android:id="@+id/btn_save_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveString"
+        android:text="存储字符串类型" />
+
+    <Button
+        android:id="@+id/btn_get_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getString"
+        android:text="获取字符串类型" />
+
+    <Button
+        android:id="@+id/btn_save_float"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveFloat"
+        android:text="存储浮点型" />
+
+    <Button
+        android:id="@+id/btn_get_float"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getFloat"
+        android:text="获取浮点型" />
+
+    <Button
+        android:id="@+id/btn_save_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveInt"
+        android:text="存储整型" />
+
+    <Button
+        android:id="@+id/btn_get_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getInt"
+        android:text="获取整型" />
+
+    <Button
+        android:id="@+id/btn_save_long_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveLong"
+        android:text="存储长整型" />
+
+    <Button
+        android:id="@+id/btn_get_long_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getLong"
+        android:text="获取长整型" />
+
+    <Button
+        android:id="@+id/btn_save_boolean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveBoolean"
+        android:text="存储boolean型" />
+
+    <Button
+        android:id="@+id/btn_get_boolean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getBoolean"
+        android:text="获取boolean型" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".datasave.file.SDFileStringActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入内容"
+        android:id="@+id/content"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:id="@+id/save"
+        android:layout_below="@+id/content"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取"
+        android:id="@+id/read"
+        android:layout_below="@+id/content"
+        android:layout_toEndOf="@+id/save" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:layout_below="@+id/save" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:id="@+id/delete"
+        android:layout_below="@+id/content"
+        android:layout_toEndOf="@+id/read"
+        android:layout_marginStart="57dp" />
+</RelativeLayout>

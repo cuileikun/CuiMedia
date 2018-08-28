@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bar_black"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/vedio_play_title"
+        layout="@layout/title_layout_com_collection" />
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/vedio_play_title" />
+
+    <ImageView
+        android:id="@+id/iv_play_button"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/vedio_pause"
+        android:enabled="true"
+        android:padding="15dp" />
+
+    <SeekBar
+        android:id="@+id/sbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="40dp"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:thumb="@drawable/thumb_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sbr"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dp">
+
+        <TextView
+            android:id="@+id/tv_progress_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

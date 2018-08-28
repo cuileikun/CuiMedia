@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!-- 数据库名字-->
+    <dbname value="cuilitepal" ></dbname>
+    <!-- 当前数据库版本-->
+    <version value="7" ></version>
+
+    <list>
+        <mapping class="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.litepal.News"></mapping>
+        <mapping class="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.litepal.Comment"></mapping>
+
+        <mapping class="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.litepal.Category"></mapping>
+        <mapping class="com.example.mbcloud_cuilk.cuilkvedioplayer.datasave.litepal.Introduction"></mapping>
+        <mapping class="com.example.mbcloud_cuilk.cuilkvedioplayer.vedio.cameraview.MediaDbBean"></mapping>
+        <mapping class="com.example.mbcloud_cuilk.cuilkvedioplayer.vedio.cameraview.MediaDbOuterBean"></mapping>
+
+    </list>
+    <!-- 数据库存储的位置 默认存储到内存 data/data/database目录下,添加下面这句配置可以把数据库存储到sd卡 需要动态请求读写sd卡的权限-->
+    <!--<storage value="cuileikun/database" />-->
+</litepal>

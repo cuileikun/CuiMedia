@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vedio.VedioPlayActivity">
+    <Button
+        android:id="@+id/btn_cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CameraView录制视频及拍照" />
+    <Button
+        android:id="@+id/btn_vedio_recorde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android 录制视频及调取本地视频" />
+    <Button
+        android:id="@+id/btn_media_recorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MediaRecorde录制视频并播放" />
+    <Button
+        android:id="@+id/btn_vedio_recorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android (系统+自定义)短视频录制（含暂停继续录制功能） 总结" />
+    <Button
+        android:id="@+id/btn_first_methord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="利用Intent调用系统自带的播放器或者安装的第三方播放器" />
+
+    <Button
+        android:id="@+id/btn_vedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="利用VideoView来播放视频" />
+
+    <Button
+        android:id="@+id/btn_mediaplayer_sufferview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="利用MediaPlayer类和SufferView来播放视频" />
+
+    <Button
+        android:id="@+id/github_kaiyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="利用开源播放器来播放视频" />
+</LinearLayout>

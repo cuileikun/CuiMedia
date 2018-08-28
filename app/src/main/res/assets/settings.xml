@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name2">CuilkVedioPlayer</string>
+    <string name="action_settings2">Settings</string>
+    <string name="string_play2">播放</string>
+    <string name="string_pause2">暂停</string>
+    <string name="string_stop2">停止</string>
+</resources>

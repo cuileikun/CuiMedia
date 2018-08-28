@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:background="@color/transparent"
+        android:id="@+id/check_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:src="@drawable/checkbox_unselecte"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+    <CheckBox
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/media_checkbox_style"
+        android:button="@null"
+        android:id="@+id/box"
+        android:padding="3dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <ImageView
+        android:id="@+id/video_icon"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/vedio"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+</RelativeLayout>
