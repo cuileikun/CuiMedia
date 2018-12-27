@@ -73,6 +73,12 @@ public class WelcomActivity extends AppCompatActivity {
                 startActivity(new Intent(WelcomActivity.this, XRecyclerViewActivity.class));
             }
         });
+        findViewById(R.id.btn_animation).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WelcomActivity.this,PicAnmaitionActivity.class));
+            }
+        });
     }
 
     private static long firstTime;

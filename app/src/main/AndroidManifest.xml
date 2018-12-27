@@ -83,7 +83,8 @@
         <activity android:name=".audio.second.AudioTestSecondActivity" />
         <activity android:name=".audio.third.AudioTestThirdActivity" />
         <activity android:name=".scrollpulldown.ScrollViewPullActivity" />
-        <activity android:name=".xrecycle.XRecyclerViewActivity"></activity>
+        <activity android:name=".xrecycle.XRecyclerViewActivity" />
+        <activity android:name=".animation.PicAnmaitionActivity"></activity>
     </application>
 
 </manifest>
